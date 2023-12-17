@@ -26,9 +26,13 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.css">
     <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.js"></script>
+    <script src="http://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"></script>
 
 
     <script>
+        mixpanel.init('678ff46ce84af05027cbeb96a8d0c326', {track_pageview: true});
+        mixpanel.track_links();
+
         $(document)
             .ready(function () {
 
@@ -211,7 +215,7 @@
                     <span title="golf-influencer">Tiger Woods</span>
                     
 
-                    Playing Through - 15 hours ago
+                    Playing Through - 16 hours ago
                 </div>
 
             </div>
@@ -440,7 +444,7 @@
     <div class="ui center aligned container">
         <div class="ui stackable inverted divided grid">
             <div class="three wide column">
-                <h4 class="ui inverted header">Dec 17 12:59:34</h4>
+                <h4 class="ui inverted header">Dec 17 13:09:35</h4>
                 <div class="ui inverted link list">
                     <a href="#" class="item">Link One</a>
                     <a href="#" class="item">Link Two</a>
