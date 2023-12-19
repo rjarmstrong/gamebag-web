@@ -68,7 +68,17 @@ theme: { extend: { colors: { clifford: '#da373d', }
 
 <main class="flex-1 container mx-auto p-4 mt-16 mb-4 max-w-screen-lg" style="max-width: 970px;">
 
-    <button id="toggleView" class="mb-4 p-2 text-white bg-black bg-black">Toggle View</button>
+    <button id="btn-list-view" class="flex items-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2">
+
+        <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path></svg>
+        List View
+    </button>
+
+    <button id="btn-tile-view" class="flex items-center bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+
+        <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h5v5H3V7zm13 0h5v5h-5V7zM3 16h5v5H3v-5zm13 0h5v5h-5v-5z"></path></svg>
+        Tile View
+    </button>
 
     <div id="articlesContainer" class="grid grid-cols-1 gap-4">
 
@@ -91,7 +101,7 @@ theme: { extend: { colors: { clifford: '#da373d', }
 
 <div class="flex flex-col bg-gray-100 p-4">
     <h2 class="font-bold text-lg"><a href="https://news.gamebag.pro/cfC">$5,000 vs $500,000 Golf Membership!</a></h2>
-    <p class="text-sm">1 hour ago • Grant Horvat Golf</p>
+    <p class="text-sm">2 hours ago • Grant Horvat Golf</p>
     <div class="flex flex-wrap gap-2 my-2">
 
     </div>
@@ -368,9 +378,13 @@ theme: { extend: { colors: { clifford: '#da373d', }
 
 <script>
 
-    document.getElementById('toggleView').addEventListener('click', function () {
-        var container = document.getElementById('articlesContainer');
+    document.getElementById('btn-list-view').addEventListener('click', function () {
+        let container = document.getElementById('articlesContainer');
         container.classList.toggle('grid-cols-1');
+    });
+
+    document.getElementById('btn-tile-view').addEventListener('click', function () {
+        let container = document.getElementById('articlesContainer');
         container.classList.toggle('md:grid-cols-2');
     });
 </script>
