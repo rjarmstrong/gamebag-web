@@ -29,7 +29,9 @@
           content="Stay updated on golf news, tutorials, equipment reviews, and engaging YouTube videos at Gamebag Golf. Catering to golf enthusiasts in the USA and UK.">
     <meta name="twitter:image" content="https://gamebag.pro/assets/gamebag_bw.png">
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/tailwindcss@3.4.0/lib/index.min.js "></script>
+
+    <link href=" https://cdn.jsdelivr.net/npm/tailwindcss@3.4.0/lib/css/preflight.min.css " rel="stylesheet">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-00GWMZ0RES"></script>
     <script>
@@ -41,11 +43,17 @@
 
         gtag('js', new Date());
         gtag('config', 'G-00GWMZ0RES');
+
+        tailwind.config = {
+theme: { extend: { colors: { clifford: '#da373d', }
+                }
+            }
+        }
     </script>
 </head>
 <body class="flex flex-col min-h-screen">
 
-<header class="text-black fixed top-0 left-0 right-0 z-10">
+<header class="text-black fixed top-0 left-0 right-0 z-10 bg-white">
     <nav class="container mx-auto p-4">
         <div class="flex justify-between">
             <a href="/" class="text-lg font-semibold"><img style="width: 140px" class="logo" alt="Gamebag Golf" src="/assets/gamebag_bw.png"></a>
@@ -62,30 +70,15 @@
 
 <main class="flex-1 container mx-auto p-4 mt-16 mb-4 max-w-screen-lg" style="max-width: 970px;">
 
-    <button id="toggleView" class="mb-4 p-2 bg-black- text-white">Toggle View</button>
+    <button id="toggleView" class="mb-4 p-2 text-white bg-black bg-black">Toggle View</button>
 
     <div id="articlesContainer" class="grid grid-cols-1 gap-4">
 
         <div class="item">
 
 <div class="flex flex-col bg-gray-100 p-4">
-    <h2 class="font-bold text-lg"><a href="https://www.golfmagic.com/tour/pga-tour/rory-mcilroy-refuses-invite-bbc-spoty-and-does-not-even-speak-video-link">Rory McIlroy refuses invite to BBC SPOTY and does not even speak on video link</a></h2>
-    <p class="text-sm">3 minutes ago • golfmagic.com</p>
-    <div class="flex flex-wrap gap-2 my-2">
-
-            <span title="golf-influencer" class="bg-blue-200 text-blue-800 p-1">Rory Mcilroy</span>
-
-    </div>
-
-</div>
-
-        </div>
-
-        <div class="item">
-
-<div class="flex flex-col bg-gray-100 p-4">
     <h2 class="font-bold text-lg"><a href="https://www.golfdigest.com/story/how-the-desert-town-of-scottsdale-arizona-became-the-underworld-professional-golf">How Scottsdale became the underworld of professional golf</a></h2>
-    <p class="text-sm">3 minutes ago • golfdigest.com</p>
+    <p class="text-sm">44 minutes ago • golfdigest.com</p>
     <div class="flex flex-wrap gap-2 my-2">
 
     </div>
@@ -98,7 +91,7 @@
 
 <div class="flex flex-col bg-gray-100 p-4">
     <h2 class="font-bold text-lg"><a href="https://golf.com/travel/park-west-palm-florida-golf/">Forget what you know about Florida golf at The Park West Palm</a></h2>
-    <p class="text-sm">3 minutes ago • golf.com</p>
+    <p class="text-sm">44 minutes ago • golf.com</p>
     <div class="flex flex-wrap gap-2 my-2">
 
     </div>
@@ -110,8 +103,8 @@
         <div class="item">
 
 <div class="flex flex-col bg-gray-100 p-4">
-    <h2 class="font-bold text-lg"><a href="https://www.golfmagic.com/tour/pga-tour/rory-mcilroy-refuses-invite-bbc-spoty-and-does-not-even-speak-video-link">Rory McIlroy refuses invite to BBC SPOTY and does not even speak on video link</a></h2>
-    <p class="text-sm">3 minutes ago • golfmagic.com</p>
+    <h2 class="font-bold text-lg"><a href="https://news.gamebag.pro/Sha">Rory McIlroy refuses invite to BBC SPOTY and does not even speak on video link</a></h2>
+    <p class="text-sm">44 minutes ago • golfmagic.com</p>
     <div class="flex flex-wrap gap-2 my-2">
 
             <span title="golf-influencer" class="bg-blue-200 text-blue-800 p-1">Rory Mcilroy</span>
@@ -126,7 +119,7 @@
 
 <div class="flex flex-col bg-gray-100 p-4">
     <h2 class="font-bold text-lg"><a href="https://www.skysports.com/golf/news/12176/13034467/angel-cabrera-reinstated-to-pga-tour-and-pga-tour-champions-after-prison-sentence">Cabrera reinstated to PGA, Champions tours after prison sentence</a></h2>
-    <p class="text-sm">3 minutes ago • skysports.com</p>
+    <p class="text-sm">44 minutes ago • skysports.com</p>
     <div class="flex flex-wrap gap-2 my-2">
 
             <span title="tour" class="bg-blue-200 text-blue-800 p-1">Pga</span>
@@ -141,7 +134,7 @@
 
 <div class="flex flex-col bg-gray-100 p-4">
     <h2 class="font-bold text-lg"><a href="https://www.golfdigest.com/story/-----how-the-sale-of-u-s--steel-relates-to-the-biggest-deal-ever">How the sale of U.S. Steel relates to the biggest deal ever made on a golf course</a></h2>
-    <p class="text-sm">3 hours ago • golfdigest.com</p>
+    <p class="text-sm">4 hours ago • golfdigest.com</p>
     <div class="flex flex-wrap gap-2 my-2">
 
     </div>
@@ -169,7 +162,7 @@
 
 <div class="flex flex-col bg-gray-100 p-4">
     <h2 class="font-bold text-lg"><a href="https://www.golfmagic.com/deals/equipment/best-last-minute-christmas-golf-gifts">The best last minute Christmas golf gifts</a></h2>
-    <p class="text-sm">4 hours ago • golfmagic.com</p>
+    <p class="text-sm">5 hours ago • golfmagic.com</p>
     <div class="flex flex-wrap gap-2 my-2">
 
     </div>
@@ -257,7 +250,7 @@
 
 <div class="flex flex-col bg-gray-100 p-4">
     <h2 class="font-bold text-lg"><a href="https://www.golfdigest.com/story/the-biggest-golf-rules-issues-of-2023">The 18 biggest golf rules issues of 2023</a></h2>
-    <p class="text-sm">7 hours ago • golfdigest.com</p>
+    <p class="text-sm">8 hours ago • golfdigest.com</p>
     <div class="flex flex-wrap gap-2 my-2">
 
     </div>
@@ -270,7 +263,7 @@
 
 <div class="flex flex-col bg-gray-100 p-4">
     <h2 class="font-bold text-lg"><a href="https://news.gamebag.pro/tZ5">Tiger’s Nike mystery, Hovland’s LIV takes, Kisner’s surprise | Monday Finish</a></h2>
-    <p class="text-sm">8 hours ago • golf.com</p>
+    <p class="text-sm">9 hours ago • golf.com</p>
     <div class="flex flex-wrap gap-2 my-2">
 
             <span title="tour" class="bg-blue-200 text-blue-800 p-1">Liv</span>
@@ -285,7 +278,7 @@
 
 <div class="flex flex-col bg-gray-100 p-4">
     <h2 class="font-bold text-lg"><a href="https://news.gamebag.pro/wD7">Report: Disgraced former Masters champion given PGA Tour green light</a></h2>
-    <p class="text-sm">8 hours ago • golfmagic.com</p>
+    <p class="text-sm">9 hours ago • golfmagic.com</p>
     <div class="flex flex-wrap gap-2 my-2">
 
             <span title="tour" class="bg-blue-200 text-blue-800 p-1">Pga</span>
@@ -300,7 +293,7 @@
 
 <div class="flex flex-col bg-gray-100 p-4">
     <h2 class="font-bold text-lg"><a href="https://www.golfmagic.com/equipment/news/release-radar-volume-two-alternative-guide-best-brands-golf">Release Radar Volume Two: An alternative guide to the best brands in golf</a></h2>
-    <p class="text-sm">9 hours ago • golfmagic.com</p>
+    <p class="text-sm">10 hours ago • golfmagic.com</p>
     <div class="flex flex-wrap gap-2 my-2">
 
     </div>
@@ -313,7 +306,7 @@
 
 <div class="flex flex-col bg-gray-100 p-4">
     <h2 class="font-bold text-lg"><a href="https://www.skysports.com/golf/news/12176/13030374/ryder-cup-and-solheim-cup-glory-celebrated-in-europe-europe-a-new-documentary-on-sky-sports">&#39;Europe! Europe!&#39; New Solheim Cup and Ryder Cup documentary on Sky</a></h2>
-    <p class="text-sm">11 hours ago • skysports.com</p>
+    <p class="text-sm">12 hours ago • skysports.com</p>
     <div class="flex flex-wrap gap-2 my-2">
 
     </div>
@@ -326,7 +319,7 @@
 
 <div class="flex flex-col bg-gray-100 p-4">
     <h2 class="font-bold text-lg"><a href="https://www.skysports.com/golf/news/12176/13033888/ladies-european-tour-2024-schedule-dates-venues-and-aramco-team-series-events-for-the-new-season">Ladies European Tour: Full 2024 schedule</a></h2>
-    <p class="text-sm">13 hours ago • skysports.com</p>
+    <p class="text-sm">14 hours ago • skysports.com</p>
     <div class="flex flex-wrap gap-2 my-2">
 
     </div>
@@ -339,7 +332,7 @@
 
 <div class="flex flex-col bg-gray-100 p-4">
     <h2 class="font-bold text-lg"><a href="https://news.gamebag.pro/pmE">Tour player overcomes recent tragedy to earn his first PGA Tour card</a></h2>
-    <p class="text-sm">21 hours ago • golfdigest.com</p>
+    <p class="text-sm">22 hours ago • golfdigest.com</p>
     <div class="flex flex-wrap gap-2 my-2">
 
             <span title="tour" class="bg-blue-200 text-blue-800 p-1">Pga</span>
@@ -354,7 +347,7 @@
 
 <div class="flex flex-col bg-gray-100 p-4">
     <h2 class="font-bold text-lg"><a href="https://www.nbcsports.com/golf/news/holding-onto-daughters-memory-hayden-springer-earns-pga-tour-card-at-q-school">Inspired by late daughter, Springer earns Tour card</a></h2>
-    <p class="text-sm">22 hours ago • nbcsports.com</p>
+    <p class="text-sm">23 hours ago • nbcsports.com</p>
     <div class="flex flex-wrap gap-2 my-2">
 
     </div>
@@ -371,6 +364,401 @@
     <div class="flex flex-wrap gap-2 my-2">
 
             <span title="tour" class="bg-blue-200 text-blue-800 p-1">Pga</span>
+
+    </div>
+
+</div>
+
+        </div>
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://www.youtube.com/watch?v=IvxzLQjttNQ">Pro Golfers Playing Like Amateurs</a></h2>
+    <p class="text-sm">1 day ago • DP World Tour</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+            <span title="tweeter" class="bg-blue-200 text-blue-800 p-1">@DPWorldTour</span>
+
+    </div>
+    <a href="https://www.youtube.com/watch?v=IvxzLQjttNQ"><img src="https://i.ytimg.com/vi/IvxzLQjttNQ/mqdefault.jpg" alt="Pro Golfers Playing Like Amateurs" class="w-240 my-2"></a>
+</div>
+
+        </div>
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://news.gamebag.pro/a9c">Hovland quells LIV rumours but rips PGA Tour leadership&#39;s &#39;arrogance&#39;</a></h2>
+    <p class="text-sm">1 day ago • skysports.com</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+            <span title="tour" class="bg-blue-200 text-blue-800 p-1">Pga</span>
+
+            <span title="tour" class="bg-blue-200 text-blue-800 p-1">Liv</span>
+
+    </div>
+
+</div>
+
+        </div>
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://news.gamebag.pro/XQt">Are Tiger Woods, Nike parting ways? Woods tight-lipped on rumors</a></h2>
+    <p class="text-sm">1 day ago • golfdigest.com</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+            <span title="golf-influencer" class="bg-blue-200 text-blue-800 p-1">Tiger Woods</span>
+
+    </div>
+
+</div>
+
+        </div>
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://news.gamebag.pro/MtB">NBC Sports tabs fan-favorite PGA Tour player in surprising lead announcer twist</a></h2>
+    <p class="text-sm">1 day ago • Playing Through</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+            <span title="tour" class="bg-blue-200 text-blue-800 p-1">Pga</span>
+
+    </div>
+
+</div>
+
+        </div>
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://news.gamebag.pro/T6V">‘A damn bad job’: Viktor Hovland lashes out at PGA Tour but stops short of jumping to LIV Golf</a></h2>
+    <p class="text-sm">1 day ago • golfdigest.com</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+            <span title="golf-influencer" class="bg-blue-200 text-blue-800 p-1">Viktor Hovland</span>
+
+            <span title="tour" class="bg-blue-200 text-blue-800 p-1">Pga</span>
+
+            <span title="tour" class="bg-blue-200 text-blue-800 p-1">Liv</span>
+
+    </div>
+
+</div>
+
+        </div>
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://www.golfdigest.com/story/old-tom-morris-statue-approved-for-st-andrews-the-scores">A new tribute to &#39;Old Tom&#39; is coming to St. Andrews</a></h2>
+    <p class="text-sm">1 day ago • golfdigest.com</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+    </div>
+
+</div>
+
+        </div>
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://www.golfdigest.com/story/golf-things-talking-about-from-2023-michael-block-jon-rahm-phil-mickelson-rollback-framework-agreement">10 things from 2023 we&#39;ll be talking about in 10 years (and 5 we won&#39;t)</a></h2>
+    <p class="text-sm">1 day ago • golfdigest.com</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+    </div>
+
+</div>
+
+        </div>
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://www.youtube.com/watch?v=LwFE2nuGCZo">Outrageous Golf Moments of the Week</a></h2>
+    <p class="text-sm">1 day ago • DP World Tour</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+            <span title="tweeter" class="bg-blue-200 text-blue-800 p-1">@DPWorldTour</span>
+
+    </div>
+    <a href="https://www.youtube.com/watch?v=LwFE2nuGCZo"><img src="https://i.ytimg.com/vi/LwFE2nuGCZo/mqdefault.jpg" alt="Outrageous Golf Moments of the Week" class="w-240 my-2"></a>
+</div>
+
+        </div>
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://www.golfmagic.com/equipment/news/witb-team-langer-pnc-championship">WITB Team Langer: PNC Championship</a></h2>
+    <p class="text-sm">1 day ago • golfmagic.com</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+    </div>
+
+</div>
+
+        </div>
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://www.youtube.com/watch?v=abiOQh4o_78">Tiger and Charlie Woods shoot 11-under 61 | Round 2 | PNC Championship | 2023</a></h2>
+    <p class="text-sm">1 day ago • PGA Tour</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+            <span title="tweeter" class="bg-blue-200 text-blue-800 p-1">@PGATOUR</span>
+
+    </div>
+    <a href="https://www.youtube.com/watch?v=abiOQh4o_78"><img src="https://i.ytimg.com/vi/abiOQh4o_78/mqdefault.jpg" alt="Tiger and Charlie Woods shoot 11-under 61 | Round 2 | PNC Championship | 2023" class="w-240 my-2"></a>
+</div>
+
+        </div>
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://www.sbnation.com/golf/2023/12/17/24005337/bernhard-langer-jason-pnc-championship-5th-family-belt">Bernhard Langer, son Jason dominate PNC Championship</a></h2>
+    <p class="text-sm">1 day ago • Playing Through</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+    </div>
+
+</div>
+
+        </div>
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://www.golfdigest.com/story/bernhard-langer-pnc-championship-fifth-win-skiing-vacation">Bernhard Langer is now a five-time PNC Championship winner. Here&#39;s how he’s going to reward himself</a></h2>
+    <p class="text-sm">1 day ago • golfdigest.com</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+    </div>
+
+</div>
+
+        </div>
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://www.nbcsports.com/golf/news/louis-oosthuizen-wins-on-course-he-designed-second-dpwt-title-in-a-row">Oosthuizen wins on course he designed; second DPWT title in a row</a></h2>
+    <p class="text-sm">1 day ago • nbcsports.com</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+    </div>
+
+</div>
+
+        </div>
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://www.skysports.com/golf/news/11071/13033226/tiger-woods-to-win-again-on-the-pga-tour-what-to-expect-in-2024-after-pnc-championship-start">Woods to win again in 2024? Tiger: &#39;I know I can do it&#39;</a></h2>
+    <p class="text-sm">1 day ago • skysports.com</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+    </div>
+
+</div>
+
+        </div>
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://www.nbcsports.com/golf/news/no-win-but-great-family-atmosphere-for-team-woods-at-pnc-championship">No win but ‘great family atmosphere’ for Team Woods at PNC</a></h2>
+    <p class="text-sm">1 day ago • nbcsports.com</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+    </div>
+
+</div>
+
+        </div>
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://news.gamebag.pro/Mtz">Tiger Woods closes the year feeling hopeful, healthy and looking forward to 2024</a></h2>
+    <p class="text-sm">1 day ago • golfdigest.com</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+            <span title="golf-influencer" class="bg-blue-200 text-blue-800 p-1">Tiger Woods</span>
+
+    </div>
+
+</div>
+
+        </div>
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://www.nbcsports.com/golf/news/an-eventful-year-still-has-a-few-weeks-of-intriguing-remaining-for-tiger-woods">An eventful year for Tiger still has intrigue remaining</a></h2>
+    <p class="text-sm">1 day ago • nbcsports.com</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+    </div>
+
+</div>
+
+        </div>
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://news.gamebag.pro/9Du">Tour Confidential: The future of the PGA Tour, Tiger and Charlie Woods Part IV</a></h2>
+    <p class="text-sm">2 days ago • golf.com</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+            <span title="tour" class="bg-blue-200 text-blue-800 p-1">Pga</span>
+
+    </div>
+
+</div>
+
+        </div>
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://news.gamebag.pro/gjR">Tiger Woods sends message to PGA Tour stars after PNC Championship</a></h2>
+    <p class="text-sm">2 days ago • golfmagic.com</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+            <span title="golf-influencer" class="bg-blue-200 text-blue-800 p-1">Tiger Woods</span>
+
+            <span title="tour" class="bg-blue-200 text-blue-800 p-1">Pga</span>
+
+    </div>
+
+</div>
+
+        </div>
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://news.gamebag.pro/36u">Tiger Woods’ son, Charlie, looking like dad with perfect chip-in at PNC Championship</a></h2>
+    <p class="text-sm">2 days ago • Playing Through</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+            <span title="golf-influencer" class="bg-blue-200 text-blue-800 p-1">Tiger Woods</span>
+
+    </div>
+
+</div>
+
+        </div>
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://www.golfdigest.com/story/kevin-kisner-nbc-sports-golf-tv-analyst-sentry-wm-phoenix-open">NBC names popular tour pro as temporary Paul Azinger replacement</a></h2>
+    <p class="text-sm">2 days ago • golfdigest.com</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+    </div>
+
+</div>
+
+        </div>
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://golf.com/news/team-langers-record-fifth-pnc-championship-win/">Team Langer’s birdie blitz leads to record fifth PNC Championship win</a></h2>
+    <p class="text-sm">2 days ago • golf.com</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+    </div>
+
+</div>
+
+        </div>
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://www.skysports.com/golf/news/12176/13033113/pnc-championship-tiger-woods-and-son-charlie-finish-tied-fifth-as-team-langer-claim-two-shot-win">Woods and son finish tied-fifth as Team Langer wins PNC Championship</a></h2>
+    <p class="text-sm">2 days ago • skysports.com</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+    </div>
+
+</div>
+
+        </div>
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://news.gamebag.pro/c43">Kisner to join NBC Sports team for two early PGA Tour events</a></h2>
+    <p class="text-sm">2 days ago • nbcsports.com</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+            <span title="tour" class="bg-blue-200 text-blue-800 p-1">Pga</span>
+
+    </div>
+
+</div>
+
+        </div>
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://news.gamebag.pro/EFn">Charlie Woods delivers epic celebration in front of dad Tiger</a></h2>
+    <p class="text-sm">2 days ago • golfmagic.com</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+            <span title="tour" class="bg-blue-200 text-blue-800 p-1">Liv</span>
+
+    </div>
+
+</div>
+
+        </div>
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://news.gamebag.pro/xJ8">Louis Oosthuizen the latest LIV golfer to go back to back on DP World Tour</a></h2>
+    <p class="text-sm">2 days ago • Playing Through</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+            <span title="liv-tour-pro" class="bg-blue-200 text-blue-800 p-1">Louis Oosthuizen</span>
+
+            <span title="tour" class="bg-blue-200 text-blue-800 p-1">Dp World</span>
+
+            <span title="tour" class="bg-blue-200 text-blue-800 p-1">Liv</span>
+
+    </div>
+
+</div>
+
+        </div>
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://news.gamebag.pro/dt5">This loophole has now allowed LIV golfers to win five of six DP World Tour events</a></h2>
+    <p class="text-sm">2 days ago • golfdigest.com</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+            <span title="tour" class="bg-blue-200 text-blue-800 p-1">Dp World</span>
+
+            <span title="tour" class="bg-blue-200 text-blue-800 p-1">Liv</span>
 
     </div>
 

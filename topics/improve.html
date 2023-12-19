@@ -29,7 +29,9 @@
           content="Stay updated on golf news, tutorials, equipment reviews, and engaging YouTube videos at Gamebag Golf. Catering to golf enthusiasts in the USA and UK.">
     <meta name="twitter:image" content="https://gamebag.pro/assets/gamebag_bw.png">
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/tailwindcss@3.4.0/lib/index.min.js "></script>
+
+    <link href=" https://cdn.jsdelivr.net/npm/tailwindcss@3.4.0/lib/css/preflight.min.css " rel="stylesheet">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-00GWMZ0RES"></script>
     <script>
@@ -41,11 +43,17 @@
 
         gtag('js', new Date());
         gtag('config', 'G-00GWMZ0RES');
+
+        tailwind.config = {
+theme: { extend: { colors: { clifford: '#da373d', }
+                }
+            }
+        }
     </script>
 </head>
 <body class="flex flex-col min-h-screen">
 
-<header class="text-black fixed top-0 left-0 right-0 z-10">
+<header class="text-black fixed top-0 left-0 right-0 z-10 bg-white">
     <nav class="container mx-auto p-4">
         <div class="flex justify-between">
             <a href="/" class="text-lg font-semibold"><img style="width: 140px" class="logo" alt="Gamebag Golf" src="/assets/gamebag_bw.png"></a>
@@ -62,9 +70,65 @@
 
 <main class="flex-1 container mx-auto p-4 mt-16 mb-4 max-w-screen-lg" style="max-width: 970px;">
 
-    <button id="toggleView" class="mb-4 p-2 bg-black- text-white">Toggle View</button>
+    <button id="toggleView" class="mb-4 p-2 text-white bg-black bg-black">Toggle View</button>
 
     <div id="articlesContainer" class="grid grid-cols-1 gap-4">
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://www.youtube.com/watch?v=aTbSJkAQmfc">My Lesson With Tiger Wood’s EX-Coach Is Going To BLOW YOUR MIND!</a></h2>
+    <p class="text-sm">1 day ago • Me And My Golf</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+            <span title="tweeter" class="bg-blue-200 text-blue-800 p-1">@Meandmygolf</span>
+
+    </div>
+    <a href="https://www.youtube.com/watch?v=aTbSJkAQmfc"><img src="https://i.ytimg.com/vi/aTbSJkAQmfc/mqdefault.jpg" alt="My Lesson With Tiger Wood’s EX-Coach Is Going To BLOW YOUR MIND!" class="w-240 my-2"></a>
+</div>
+
+        </div>
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://www.youtube.com/watch?v=_ouvZBlZp4k">STOP Hitting Short Drives - The Simple Golf Swing Lesson</a></h2>
+    <p class="text-sm">2 days ago • Mark Crossfield</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+            <span title="tweeter" class="bg-blue-200 text-blue-800 p-1">@4golfonline</span>
+
+    </div>
+    <a href="https://www.youtube.com/watch?v=_ouvZBlZp4k"><img src="https://i.ytimg.com/vi/_ouvZBlZp4k/mqdefault.jpg" alt="STOP Hitting Short Drives - The Simple Golf Swing Lesson" class="w-240 my-2"></a>
+</div>
+
+        </div>
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://www.youtube.com/watch?v=hfd7W6nDTRk">You Will Never See An Easier Way To Hit Driver Straight</a></h2>
+    <p class="text-sm">3 days ago • Danny Maude</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+    </div>
+    <a href="https://www.youtube.com/watch?v=hfd7W6nDTRk"><img src="https://i.ytimg.com/vi/hfd7W6nDTRk/mqdefault.jpg" alt="You Will Never See An Easier Way To Hit Driver Straight" class="w-240 my-2"></a>
+</div>
+
+        </div>
+
+        <div class="item">
+
+<div class="flex flex-col bg-gray-100 p-4">
+    <h2 class="font-bold text-lg"><a href="https://www.youtube.com/watch?v=FnPjBDn3xEA">Use THIS GOLF CLUB to improve your SHORT GAME!</a></h2>
+    <p class="text-sm">3 days ago • Swing Quest</p>
+    <div class="flex flex-wrap gap-2 my-2">
+
+    </div>
+    <a href="https://www.youtube.com/watch?v=FnPjBDn3xEA"><img src="https://i.ytimg.com/vi/FnPjBDn3xEA/mqdefault.jpg" alt="Use THIS GOLF CLUB to improve your SHORT GAME!" class="w-240 my-2"></a>
+</div>
+
+        </div>
 
     </div>
 </main>
