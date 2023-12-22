@@ -56,21 +56,57 @@ theme: { extend: { colors: { clifford: '#da373d', }
         <div class="flex justify-between">
             <a href="/" class="text-lg font-semibold"><img style="width: 140px" class="logo" alt="Gamebag Golf" src="/assets/gamebag_bw.png"></a>
 
-                <a href="/" class="item ">Tour</a>
-
-                <a href="/entertainment" class="item active">Entertainment</a>
-
-                <a href="/improve" class="item ">Improve</a>
-
-                <a href="/gear" class="item ">Gear</a>
-
-                <a href="/grapevine" class="item ">Grapevine</a>
-
         </div>
     </nav>
 </header>
 
 <main class="flex-1 container mx-auto p-4 mt-16 mb-4 max-w-screen-lg" style="max-width: 970px;">
+
+    <div class="border-b border-gray-200">
+        <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTabs">
+
+            <li class="mr-2">
+                <a href="/" class="item ">
+                <button  class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 focus:outline-none focus:text-gray-600 focus:border-gray-300" role="tab">
+                    Tour
+                </button>
+                </a>
+            </li>
+
+            <li class="mr-2">
+                <a href="/entertainment" class="item active">
+                <button  class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 focus:outline-none focus:text-gray-600 focus:border-gray-300" role="tab">
+                    Entertainment
+                </button>
+                </a>
+            </li>
+
+            <li class="mr-2">
+                <a href="/improve" class="item ">
+                <button  class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 focus:outline-none focus:text-gray-600 focus:border-gray-300" role="tab">
+                    Improve
+                </button>
+                </a>
+            </li>
+
+            <li class="mr-2">
+                <a href="/gear" class="item ">
+                <button  class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 focus:outline-none focus:text-gray-600 focus:border-gray-300" role="tab">
+                    Gear
+                </button>
+                </a>
+            </li>
+
+            <li class="mr-2">
+                <a href="/grapevine" class="item ">
+                <button  class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 focus:outline-none focus:text-gray-600 focus:border-gray-300" role="tab">
+                    Grapevine
+                </button>
+                </a>
+            </li>
+
+        </ul>
+    </div>
 
     <button id="btn-tile-view" class="flex items-center bg-black-500 hover:bg-black-700 text-white font-bold py-2 px-4 rounded">
 
@@ -408,7 +444,7 @@ theme: { extend: { colors: { clifford: '#da373d', }
 
 <footer class="bg-gray-700 text-white p-4">
     <div class="container mx-auto text-center">
-        Gamebag Golf 2024 Dec 22 13:14:27
+        Gamebag Golf 2024 Dec 22 13:24:49
     </div>
 </footer>
 
